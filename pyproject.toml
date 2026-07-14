@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recalq-guard"
+version = "0.1.0"
+description = "Negation & polarity awareness for semantic caches — stop serving 'enable' when the user asked 'disable'."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["llm", "semantic-cache", "caching", "litellm", "safety", "rag"]
+authors = [{name = "Sumedh"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://recalq.com"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["recalq_guard*"]
